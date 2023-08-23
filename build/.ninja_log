@@ -1,0 +1,23 @@
+# ninja log v5
+26	1616	7143885789873116	source/CMakeFiles/openuet.dir/openuet/core/app.cpp.obj	b36d1ed4831ede05
+29	657	7143866907129503	source/CMakeFiles/openuet.dir/openuet/def.cpp.obj	8562982729aef4e3
+41	4122	7143859968256207	source/vendor/glad/CMakeFiles/glad.dir/glad/src/glad.c.obj	34b769603ce59d78
+31	1614	7143885789873116	sandbox/CMakeFiles/sandbox.dir/src/main.cpp.obj	761992c28a12dd5d
+17584	17685	7143860104285547	source/vendor/stb/libstb.a	498c801fed22103c
+4140	4903	7143859975371582	source/vendor/glad/libglad.a	690df55dcc44901
+33	1389	7143859940771514	source/CMakeFiles/openuet.dir/openuet/test.cpp.obj	72ab5a7c57d85976
+1753	1933	7143885793080132	sandbox/sandbox.exe	3e8fad1cec6ac240
+26580	26837	7143860195772392	source/vendor/spdlog/libspdlog.a	e7fc814c6b25b71f
+107	15410	7143860081518262	source/vendor/spdlog/CMakeFiles/spdlog.dir/src/fmt.cpp.obj	fa30dca97c826be3
+113	17584	7143860103258905	source/vendor/stb/CMakeFiles/stb.dir/stb_image.cpp.obj	de6448c4e83b508d
+1617	1753	7143885791298262	source/libopenuet.a	4005a2859298a9ce
+82	7109	7143859998515210	source/vendor/spdlog/CMakeFiles/spdlog.dir/src/async.cpp.obj	df02cc0912034358
+102	5398	7143859981263391	source/vendor/spdlog/CMakeFiles/spdlog.dir/src/cfg.cpp.obj	28cc392cc9260967
+48	26579	7143860193090336	source/vendor/spdlog/CMakeFiles/spdlog.dir/src/spdlog.cpp.obj	996292349e6cf39b
+59	10282	7143860030188234	source/vendor/spdlog/CMakeFiles/spdlog.dir/src/color_sinks.cpp.obj	fa5ef7ad461ad4cf
+73	6109	7143859988483865	source/vendor/spdlog/CMakeFiles/spdlog.dir/src/file_sinks.cpp.obj	b644c30dda9be139
+54	10129	7143860028701360	source/vendor/spdlog/CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.obj	56db9f9aa63594be
+30	1234	7143886772709157	sandbox/CMakeFiles/sandbox.dir/src/main.cpp.obj	761992c28a12dd5d
+24	1266	7143886773032176	source/CMakeFiles/openuet.dir/openuet/core/app.cpp.obj	b36d1ed4831ede05
+1267	1363	7143886773981789	source/libopenuet.a	4005a2859298a9ce
+1363	1507	7143886775346988	sandbox/sandbox.exe	3e8fad1cec6ac240
