@@ -5,6 +5,7 @@ namespace openuet{
     {
 
         std::cout << "Hello Second!" << std::endl;
+        std::cout << "GG" << std::endl;
 
     }
 
