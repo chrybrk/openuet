@@ -5,13 +5,17 @@ class Sandbox : public openuet::Application
     public:
         Sandbox()
         {
-            std::cout << "Hello, First!" << std::endl;
+            window = std::make_shared<openuet::Window>();
+            window->Init();
         };
 
         ~Sandbox()
         {
-
         };
+
+    private:
+        std::shared_ptr<openuet::Window> window;
+
 };
 
 openuet::Application* openuet::CreateApplication()

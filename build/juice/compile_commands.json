@@ -7,6 +7,12 @@
 },
 {
   "directory": "C:/Users/kashi/workspace/openuet/build/juice",
+  "command": "C:\\mingw64\\bin\\c++.exe -DGLFW_INCLUDE_NONE -DJUICE_PLATFORM_WINDOW -DSPDLOG_COMPILED_LIB -DSQ_RELEASE -Dopenuet_PLATFORM_WINDOW -IC:/Users/kashi/workspace/openuet/source/openuet -IC:/Users/kashi/workspace/openuet/source/vendor -IC:/Users/kashi/workspace/openuet/source/vendor/glad -IC:/Users/kashi/workspace/openuet/source/vendor/glm -IC:/Users/kashi/workspace/openuet/source/vendor/spdlog/include -IC:/Users/kashi/workspace/openuet/source/vendor/stb  -O3 -std=c++17 -O3 -std=c++17 -O3 -DNDEBUG -std=gnu++17 -o source\\CMakeFiles\\openuet.dir\\openuet\\window\\window.cpp.obj -c C:\\Users\\kashi\\workspace\\openuet\\source\\openuet\\window\\window.cpp",
+  "file": "C:\\Users\\kashi\\workspace\\openuet\\source\\openuet\\window\\window.cpp",
+  "output": "source\\CMakeFiles\\openuet.dir\\openuet\\window\\window.cpp.obj"
+},
+{
+  "directory": "C:/Users/kashi/workspace/openuet/build/juice",
   "command": "C:\\mingw64\\bin\\gcc.exe -DGLFW_INCLUDE_NONE -DJUICE_PLATFORM_WINDOW -DSPDLOG_COMPILED_LIB -DSQ_RELEASE -Dopenuet_PLATFORM_WINDOW -IC:/Users/kashi/workspace/openuet/source/openuet -IC:/Users/kashi/workspace/openuet/source/vendor -IC:/Users/kashi/workspace/openuet/source/vendor/glad -IC:/Users/kashi/workspace/openuet/source/vendor/glm -IC:/Users/kashi/workspace/openuet/source/vendor/spdlog/include -IC:/Users/kashi/workspace/openuet/source/vendor/stb -IC:/Users/kashi/workspace/openuet/source/vendor/glad/. -O3 -DNDEBUG -o source\\vendor\\glad\\CMakeFiles\\glad.dir\\glad\\src\\glad.c.obj -c C:\\Users\\kashi\\workspace\\openuet\\source\\vendor\\glad\\glad\\src\\glad.c",
   "file": "C:\\Users\\kashi\\workspace\\openuet\\source\\vendor\\glad\\glad\\src\\glad.c",
   "output": "source\\vendor\\glad\\CMakeFiles\\glad.dir\\glad\\src\\glad.c.obj"
