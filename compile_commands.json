@@ -7,18 +7,6 @@
 },
 {
   "directory": "/home/chry/workspace/git/openuet/build/juice",
-  "command": "/usr/bin/c++ -DGLFW_INCLUDE_NONE -DJUICE_PLATFORM_LINUX -DSPDLOG_COMPILED_LIB -DSQ_RELEASE -Dopenuet_PLATFORM_LINUX -I/home/chry/workspace/git/openuet/source/openuet -I/home/chry/workspace/git/openuet/source/vendor -I/home/chry/workspace/git/openuet/source/vendor/glad -I/home/chry/workspace/git/openuet/source/vendor/glm -I/home/chry/workspace/git/openuet/source/vendor/spdlog/include -I/home/chry/workspace/git/openuet/source/vendor/stb  -O3 -std=c++17 -O3 -std=c++17 -O3 -DNDEBUG -std=gnu++17 -o source/CMakeFiles/openuet.dir/openuet/layer/layer.cpp.o -c /home/chry/workspace/git/openuet/source/openuet/layer/layer.cpp",
-  "file": "/home/chry/workspace/git/openuet/source/openuet/layer/layer.cpp",
-  "output": "source/CMakeFiles/openuet.dir/openuet/layer/layer.cpp.o"
-},
-{
-  "directory": "/home/chry/workspace/git/openuet/build/juice",
-  "command": "/usr/bin/c++ -DGLFW_INCLUDE_NONE -DJUICE_PLATFORM_LINUX -DSPDLOG_COMPILED_LIB -DSQ_RELEASE -Dopenuet_PLATFORM_LINUX -I/home/chry/workspace/git/openuet/source/openuet -I/home/chry/workspace/git/openuet/source/vendor -I/home/chry/workspace/git/openuet/source/vendor/glad -I/home/chry/workspace/git/openuet/source/vendor/glm -I/home/chry/workspace/git/openuet/source/vendor/spdlog/include -I/home/chry/workspace/git/openuet/source/vendor/stb  -O3 -std=c++17 -O3 -std=c++17 -O3 -DNDEBUG -std=gnu++17 -o source/CMakeFiles/openuet.dir/openuet/layer/layer_stack.cpp.o -c /home/chry/workspace/git/openuet/source/openuet/layer/layer_stack.cpp",
-  "file": "/home/chry/workspace/git/openuet/source/openuet/layer/layer_stack.cpp",
-  "output": "source/CMakeFiles/openuet.dir/openuet/layer/layer_stack.cpp.o"
-},
-{
-  "directory": "/home/chry/workspace/git/openuet/build/juice",
   "command": "/usr/bin/c++ -DGLFW_INCLUDE_NONE -DJUICE_PLATFORM_LINUX -DSPDLOG_COMPILED_LIB -DSQ_RELEASE -Dopenuet_PLATFORM_LINUX -I/home/chry/workspace/git/openuet/source/openuet -I/home/chry/workspace/git/openuet/source/vendor -I/home/chry/workspace/git/openuet/source/vendor/glad -I/home/chry/workspace/git/openuet/source/vendor/glm -I/home/chry/workspace/git/openuet/source/vendor/spdlog/include -I/home/chry/workspace/git/openuet/source/vendor/stb  -O3 -std=c++17 -O3 -std=c++17 -O3 -DNDEBUG -std=gnu++17 -o source/CMakeFiles/openuet.dir/openuet/window/window.cpp.o -c /home/chry/workspace/git/openuet/source/openuet/window/window.cpp",
   "file": "/home/chry/workspace/git/openuet/source/openuet/window/window.cpp",
   "output": "source/CMakeFiles/openuet.dir/openuet/window/window.cpp.o"

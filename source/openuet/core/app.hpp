@@ -3,6 +3,8 @@
 
 #include "pch.hpp"
 
+#include "layer/layer_stack.hpp"
+
 namespace openuet{
     class Application
     {
@@ -10,7 +12,12 @@ namespace openuet{
             Application();
             ~Application();
 
+            void PushLayer(Layer* layer);
+
             void Run();
+
+        private:
+            LayerStack m_LayerStack;
     };
     Application *CreateApplication();
 }

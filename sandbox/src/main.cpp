@@ -5,8 +5,6 @@ class Sandbox : public openuet::Application
     public:
         Sandbox()
         {
-            window = std::make_shared<openuet::Window>();
-            window->Init();
         };
 
         ~Sandbox()
@@ -14,7 +12,6 @@ class Sandbox : public openuet::Application
         };
 
     private:
-        std::shared_ptr<openuet::Window> window;
 
 };
 

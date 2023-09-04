@@ -1,21 +1,36 @@
 #include "app.hpp"
 
+#include "window/window.hpp"
+
 namespace openuet{
     Application::Application()
     {
-
-        std::cout << "Hello Second!" << std::endl;
-        std::cout << "GG" << std::endl;
-
+        Window::Init();
     }
 
     Application::~Application()
     {
+        Window::Terminate();
+    }
 
+    void Application::PushLayer(Layer* layer)
+    {
+        m_LayerStack.PushLayer(layer);
+        layer->OnAttach();
     }
 
     void Application::Run()
     {
-        std::cout << "Blah" << std::endl;
+        while (Window::IsAlive())
+        {
+            Window::OnClear();
+
+            for (Layer* layer : m_LayerStack)
+            {
+                layer->OnUpdate();
+            }
+
+            Window::OnUpdate();
+        }
     }
 }

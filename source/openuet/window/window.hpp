@@ -22,8 +22,16 @@ namespace openuet {
     class Window
     {
         public:
-            void Init(const WindowProp& window_props = WindowProp(800, 600, "sexy", true));
-            void Terminate();
+            static void Init(const WindowProp& window_props = WindowProp(800, 600, "Game Engine (openuet)", true));
+            static void Terminate();
+
+            static void OnClear();
+            static void OnUpdate();
+            static void SetVSync(bool enabled);
+
+            static inline bool IsAlive() { return m_WindowData.Alive; }
+
+            static void WindowTerminateCallback(GLFWwindow* window);
         
         private:
             struct WindowData
@@ -38,6 +46,5 @@ namespace openuet {
 
             static GLFWwindow* m_Window;
             static WindowData m_WindowData;
-        
     };
 }

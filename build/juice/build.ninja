@@ -39,13 +39,13 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = C$:/Users/kashi/workspace/openuet/build/juice/
+cmake_ninja_workdir = /home/chry/workspace/git/openuet/build/juice/
 
 #############################################
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\kashi\workspace\openuet\build\juice && "C:\Program Files\CMake\bin\cmake-gui.exe" -SC:\Users\kashi\workspace\openuet -BC:\Users\kashi\workspace\openuet\build\juice"
+  COMMAND = cd /home/chry/workspace/git/openuet/build/juice && /usr/bin/ccmake -S/home/chry/workspace/git/openuet -B/home/chry/workspace/git/openuet/build/juice
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -57,7 +57,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\kashi\workspace\openuet\build\juice && "C:\Program Files\CMake\bin\cmake.exe" --regenerate-during-build -SC:\Users\kashi\workspace\openuet -BC:\Users\kashi\workspace\openuet\build\juice"
+  COMMAND = cd /home/chry/workspace/git/openuet/build/juice && /usr/bin/cmake --regenerate-during-build -S/home/chry/workspace/git/openuet -B/home/chry/workspace/git/openuet/build/juice
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -66,7 +66,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# C:/Users/kashi/workspace/openuet/CMakeLists.txt
+# /home/chry/workspace/git/openuet/CMakeLists.txt
 # =============================================================================
 
 # =============================================================================
@@ -78,21 +78,37 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 build cmake_object_order_depends_target_openuet: phony || cmake_object_order_depends_target_glad cmake_object_order_depends_target_spdlog cmake_object_order_depends_target_stb
 
-build source/CMakeFiles/openuet.dir/openuet/core/app.cpp.obj: CXX_COMPILER__openuet_unscanned_Release C$:/Users/kashi/workspace/openuet/source/openuet/core/app.cpp || cmake_object_order_depends_target_openuet
-  DEFINES = -DGLFW_INCLUDE_NONE -DJUICE_PLATFORM_WINDOW -DSPDLOG_COMPILED_LIB -DSQ_RELEASE -Dopenuet_PLATFORM_WINDOW
-  DEP_FILE = source\CMakeFiles\openuet.dir\openuet\core\app.cpp.obj.d
+build source/CMakeFiles/openuet.dir/openuet/core/app.cpp.o: CXX_COMPILER__openuet_unscanned_Release /home/chry/workspace/git/openuet/source/openuet/core/app.cpp || cmake_object_order_depends_target_openuet
+  DEFINES = -DGLFW_INCLUDE_NONE -DJUICE_PLATFORM_LINUX -DSPDLOG_COMPILED_LIB -DSQ_RELEASE -Dopenuet_PLATFORM_LINUX
+  DEP_FILE = source/CMakeFiles/openuet.dir/openuet/core/app.cpp.o.d
   FLAGS = -O3 -std=c++17 -O3 -std=c++17 -O3 -DNDEBUG -std=gnu++17
-  INCLUDES = -IC:/Users/kashi/workspace/openuet/source/openuet -IC:/Users/kashi/workspace/openuet/source/vendor -IC:/Users/kashi/workspace/openuet/source/vendor/glad -IC:/Users/kashi/workspace/openuet/source/vendor/glm -IC:/Users/kashi/workspace/openuet/source/vendor/spdlog/include -IC:/Users/kashi/workspace/openuet/source/vendor/stb
-  OBJECT_DIR = source\CMakeFiles\openuet.dir
-  OBJECT_FILE_DIR = source\CMakeFiles\openuet.dir\openuet\core
+  INCLUDES = -I/home/chry/workspace/git/openuet/source/openuet -I/home/chry/workspace/git/openuet/source/vendor -I/home/chry/workspace/git/openuet/source/vendor/glad -I/home/chry/workspace/git/openuet/source/vendor/glm -I/home/chry/workspace/git/openuet/source/vendor/spdlog/include -I/home/chry/workspace/git/openuet/source/vendor/stb
+  OBJECT_DIR = source/CMakeFiles/openuet.dir
+  OBJECT_FILE_DIR = source/CMakeFiles/openuet.dir/openuet/core
 
-build source/CMakeFiles/openuet.dir/openuet/window/window.cpp.obj: CXX_COMPILER__openuet_unscanned_Release C$:/Users/kashi/workspace/openuet/source/openuet/window/window.cpp || cmake_object_order_depends_target_openuet
-  DEFINES = -DGLFW_INCLUDE_NONE -DJUICE_PLATFORM_WINDOW -DSPDLOG_COMPILED_LIB -DSQ_RELEASE -Dopenuet_PLATFORM_WINDOW
-  DEP_FILE = source\CMakeFiles\openuet.dir\openuet\window\window.cpp.obj.d
+build source/CMakeFiles/openuet.dir/openuet/layer/layer.cpp.o: CXX_COMPILER__openuet_unscanned_Release /home/chry/workspace/git/openuet/source/openuet/layer/layer.cpp || cmake_object_order_depends_target_openuet
+  DEFINES = -DGLFW_INCLUDE_NONE -DJUICE_PLATFORM_LINUX -DSPDLOG_COMPILED_LIB -DSQ_RELEASE -Dopenuet_PLATFORM_LINUX
+  DEP_FILE = source/CMakeFiles/openuet.dir/openuet/layer/layer.cpp.o.d
   FLAGS = -O3 -std=c++17 -O3 -std=c++17 -O3 -DNDEBUG -std=gnu++17
-  INCLUDES = -IC:/Users/kashi/workspace/openuet/source/openuet -IC:/Users/kashi/workspace/openuet/source/vendor -IC:/Users/kashi/workspace/openuet/source/vendor/glad -IC:/Users/kashi/workspace/openuet/source/vendor/glm -IC:/Users/kashi/workspace/openuet/source/vendor/spdlog/include -IC:/Users/kashi/workspace/openuet/source/vendor/stb
-  OBJECT_DIR = source\CMakeFiles\openuet.dir
-  OBJECT_FILE_DIR = source\CMakeFiles\openuet.dir\openuet\window
+  INCLUDES = -I/home/chry/workspace/git/openuet/source/openuet -I/home/chry/workspace/git/openuet/source/vendor -I/home/chry/workspace/git/openuet/source/vendor/glad -I/home/chry/workspace/git/openuet/source/vendor/glm -I/home/chry/workspace/git/openuet/source/vendor/spdlog/include -I/home/chry/workspace/git/openuet/source/vendor/stb
+  OBJECT_DIR = source/CMakeFiles/openuet.dir
+  OBJECT_FILE_DIR = source/CMakeFiles/openuet.dir/openuet/layer
+
+build source/CMakeFiles/openuet.dir/openuet/layer/layer_stack.cpp.o: CXX_COMPILER__openuet_unscanned_Release /home/chry/workspace/git/openuet/source/openuet/layer/layer_stack.cpp || cmake_object_order_depends_target_openuet
+  DEFINES = -DGLFW_INCLUDE_NONE -DJUICE_PLATFORM_LINUX -DSPDLOG_COMPILED_LIB -DSQ_RELEASE -Dopenuet_PLATFORM_LINUX
+  DEP_FILE = source/CMakeFiles/openuet.dir/openuet/layer/layer_stack.cpp.o.d
+  FLAGS = -O3 -std=c++17 -O3 -std=c++17 -O3 -DNDEBUG -std=gnu++17
+  INCLUDES = -I/home/chry/workspace/git/openuet/source/openuet -I/home/chry/workspace/git/openuet/source/vendor -I/home/chry/workspace/git/openuet/source/vendor/glad -I/home/chry/workspace/git/openuet/source/vendor/glm -I/home/chry/workspace/git/openuet/source/vendor/spdlog/include -I/home/chry/workspace/git/openuet/source/vendor/stb
+  OBJECT_DIR = source/CMakeFiles/openuet.dir
+  OBJECT_FILE_DIR = source/CMakeFiles/openuet.dir/openuet/layer
+
+build source/CMakeFiles/openuet.dir/openuet/window/window.cpp.o: CXX_COMPILER__openuet_unscanned_Release /home/chry/workspace/git/openuet/source/openuet/window/window.cpp || cmake_object_order_depends_target_openuet
+  DEFINES = -DGLFW_INCLUDE_NONE -DJUICE_PLATFORM_LINUX -DSPDLOG_COMPILED_LIB -DSQ_RELEASE -Dopenuet_PLATFORM_LINUX
+  DEP_FILE = source/CMakeFiles/openuet.dir/openuet/window/window.cpp.o.d
+  FLAGS = -O3 -std=c++17 -O3 -std=c++17 -O3 -DNDEBUG -std=gnu++17
+  INCLUDES = -I/home/chry/workspace/git/openuet/source/openuet -I/home/chry/workspace/git/openuet/source/vendor -I/home/chry/workspace/git/openuet/source/vendor/glad -I/home/chry/workspace/git/openuet/source/vendor/glm -I/home/chry/workspace/git/openuet/source/vendor/spdlog/include -I/home/chry/workspace/git/openuet/source/vendor/stb
+  OBJECT_DIR = source/CMakeFiles/openuet.dir
+  OBJECT_FILE_DIR = source/CMakeFiles/openuet.dir/openuet/window
 
 
 # =============================================================================
@@ -100,14 +116,14 @@ build source/CMakeFiles/openuet.dir/openuet/window/window.cpp.obj: CXX_COMPILER_
 
 
 #############################################
-# Link the static library source\libopenuet.a
+# Link the static library source/libopenuet.a
 
-build source/libopenuet.a: CXX_STATIC_LIBRARY_LINKER__openuet_Release source/CMakeFiles/openuet.dir/openuet/core/app.cpp.obj source/CMakeFiles/openuet.dir/openuet/window/window.cpp.obj || source/vendor/glad/libglad.a source/vendor/spdlog/libspdlog.a source/vendor/stb/libstb.a
+build source/libopenuet.a: CXX_STATIC_LIBRARY_LINKER__openuet_Release source/CMakeFiles/openuet.dir/openuet/core/app.cpp.o source/CMakeFiles/openuet.dir/openuet/layer/layer.cpp.o source/CMakeFiles/openuet.dir/openuet/layer/layer_stack.cpp.o source/CMakeFiles/openuet.dir/openuet/window/window.cpp.o || source/vendor/glad/libglad.a source/vendor/spdlog/libspdlog.a source/vendor/stb/libstb.a
   LANGUAGE_COMPILE_FLAGS = -O3 -std=c++17 -O3 -std=c++17 -O3 -DNDEBUG
-  OBJECT_DIR = source\CMakeFiles\openuet.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = source\libopenuet.a
+  OBJECT_DIR = source/CMakeFiles/openuet.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = source/libopenuet.a
   TARGET_PDB = openuet.a.dbg
 
 
@@ -115,7 +131,7 @@ build source/libopenuet.a: CXX_STATIC_LIBRARY_LINKER__openuet_Release source/CMa
 # Utility command for edit_cache
 
 build source/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\kashi\workspace\openuet\build\juice\source && "C:\Program Files\CMake\bin\cmake-gui.exe" -SC:\Users\kashi\workspace\openuet -BC:\Users\kashi\workspace\openuet\build\juice"
+  COMMAND = cd /home/chry/workspace/git/openuet/build/juice/source && /usr/bin/ccmake -S/home/chry/workspace/git/openuet -B/home/chry/workspace/git/openuet/build/juice
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -127,7 +143,7 @@ build source/edit_cache: phony source/CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build source/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\kashi\workspace\openuet\build\juice\source && "C:\Program Files\CMake\bin\cmake.exe" --regenerate-during-build -SC:\Users\kashi\workspace\openuet -BC:\Users\kashi\workspace\openuet\build\juice"
+  COMMAND = cd /home/chry/workspace/git/openuet/build/juice/source && /usr/bin/cmake --regenerate-during-build -S/home/chry/workspace/git/openuet -B/home/chry/workspace/git/openuet/build/juice
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -136,7 +152,7 @@ build source/rebuild_cache: phony source/CMakeFiles/rebuild_cache.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# C:/Users/kashi/workspace/openuet/source/CMakeLists.txt
+# /home/chry/workspace/git/openuet/source/CMakeLists.txt
 # =============================================================================
 
 # =============================================================================
@@ -148,13 +164,13 @@ build source/rebuild_cache: phony source/CMakeFiles/rebuild_cache.util
 
 build cmake_object_order_depends_target_glad: phony || source/vendor/glad/CMakeFiles/glad.dir
 
-build source/vendor/glad/CMakeFiles/glad.dir/glad/src/glad.c.obj: C_COMPILER__glad_unscanned_Release C$:/Users/kashi/workspace/openuet/source/vendor/glad/glad/src/glad.c || cmake_object_order_depends_target_glad
-  DEFINES = -DGLFW_INCLUDE_NONE -DJUICE_PLATFORM_WINDOW -DSPDLOG_COMPILED_LIB -DSQ_RELEASE -Dopenuet_PLATFORM_WINDOW
-  DEP_FILE = source\vendor\glad\CMakeFiles\glad.dir\glad\src\glad.c.obj.d
+build source/vendor/glad/CMakeFiles/glad.dir/glad/src/glad.c.o: C_COMPILER__glad_unscanned_Release /home/chry/workspace/git/openuet/source/vendor/glad/glad/src/glad.c || cmake_object_order_depends_target_glad
+  DEFINES = -DGLFW_INCLUDE_NONE -DJUICE_PLATFORM_LINUX -DSPDLOG_COMPILED_LIB -DSQ_RELEASE -Dopenuet_PLATFORM_LINUX
+  DEP_FILE = source/vendor/glad/CMakeFiles/glad.dir/glad/src/glad.c.o.d
   FLAGS = -O3 -DNDEBUG
-  INCLUDES = -IC:/Users/kashi/workspace/openuet/source/openuet -IC:/Users/kashi/workspace/openuet/source/vendor -IC:/Users/kashi/workspace/openuet/source/vendor/glad -IC:/Users/kashi/workspace/openuet/source/vendor/glm -IC:/Users/kashi/workspace/openuet/source/vendor/spdlog/include -IC:/Users/kashi/workspace/openuet/source/vendor/stb -IC:/Users/kashi/workspace/openuet/source/vendor/glad/.
-  OBJECT_DIR = source\vendor\glad\CMakeFiles\glad.dir
-  OBJECT_FILE_DIR = source\vendor\glad\CMakeFiles\glad.dir\glad\src
+  INCLUDES = -I/home/chry/workspace/git/openuet/source/openuet -I/home/chry/workspace/git/openuet/source/vendor -I/home/chry/workspace/git/openuet/source/vendor/glad -I/home/chry/workspace/git/openuet/source/vendor/glm -I/home/chry/workspace/git/openuet/source/vendor/spdlog/include -I/home/chry/workspace/git/openuet/source/vendor/stb -I/home/chry/workspace/git/openuet/source/vendor/glad/.
+  OBJECT_DIR = source/vendor/glad/CMakeFiles/glad.dir
+  OBJECT_FILE_DIR = source/vendor/glad/CMakeFiles/glad.dir/glad/src
 
 
 # =============================================================================
@@ -162,14 +178,14 @@ build source/vendor/glad/CMakeFiles/glad.dir/glad/src/glad.c.obj: C_COMPILER__gl
 
 
 #############################################
-# Link the static library source\vendor\glad\libglad.a
+# Link the static library source/vendor/glad/libglad.a
 
-build source/vendor/glad/libglad.a: C_STATIC_LIBRARY_LINKER__glad_Release source/vendor/glad/CMakeFiles/glad.dir/glad/src/glad.c.obj
+build source/vendor/glad/libglad.a: C_STATIC_LIBRARY_LINKER__glad_Release source/vendor/glad/CMakeFiles/glad.dir/glad/src/glad.c.o
   LANGUAGE_COMPILE_FLAGS = -O3 -DNDEBUG
-  OBJECT_DIR = source\vendor\glad\CMakeFiles\glad.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = source\vendor\glad\libglad.a
+  OBJECT_DIR = source/vendor/glad/CMakeFiles/glad.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = source/vendor/glad/libglad.a
   TARGET_PDB = glad.a.dbg
 
 
@@ -177,7 +193,7 @@ build source/vendor/glad/libglad.a: C_STATIC_LIBRARY_LINKER__glad_Release source
 # Utility command for edit_cache
 
 build source/vendor/glad/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\kashi\workspace\openuet\build\juice\source\vendor\glad && "C:\Program Files\CMake\bin\cmake-gui.exe" -SC:\Users\kashi\workspace\openuet -BC:\Users\kashi\workspace\openuet\build\juice"
+  COMMAND = cd /home/chry/workspace/git/openuet/build/juice/source/vendor/glad && /usr/bin/ccmake -S/home/chry/workspace/git/openuet -B/home/chry/workspace/git/openuet/build/juice
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -189,7 +205,7 @@ build source/vendor/glad/edit_cache: phony source/vendor/glad/CMakeFiles/edit_ca
 # Utility command for rebuild_cache
 
 build source/vendor/glad/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\kashi\workspace\openuet\build\juice\source\vendor\glad && "C:\Program Files\CMake\bin\cmake.exe" --regenerate-during-build -SC:\Users\kashi\workspace\openuet -BC:\Users\kashi\workspace\openuet\build\juice"
+  COMMAND = cd /home/chry/workspace/git/openuet/build/juice/source/vendor/glad && /usr/bin/cmake --regenerate-during-build -S/home/chry/workspace/git/openuet -B/home/chry/workspace/git/openuet/build/juice
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -198,7 +214,7 @@ build source/vendor/glad/rebuild_cache: phony source/vendor/glad/CMakeFiles/rebu
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# C:/Users/kashi/workspace/openuet/source/CMakeLists.txt
+# /home/chry/workspace/git/openuet/source/CMakeLists.txt
 # =============================================================================
 
 # =============================================================================
@@ -210,61 +226,61 @@ build source/vendor/glad/rebuild_cache: phony source/vendor/glad/CMakeFiles/rebu
 
 build cmake_object_order_depends_target_spdlog: phony || source/vendor/spdlog/CMakeFiles/spdlog.dir
 
-build source/vendor/spdlog/CMakeFiles/spdlog.dir/src/spdlog.cpp.obj: CXX_COMPILER__spdlog_unscanned_Release C$:/Users/kashi/workspace/openuet/source/vendor/spdlog/src/spdlog.cpp || cmake_object_order_depends_target_spdlog
-  DEFINES = -DGLFW_INCLUDE_NONE -DJUICE_PLATFORM_WINDOW -DSPDLOG_COMPILED_LIB -DSQ_RELEASE -Dopenuet_PLATFORM_WINDOW
-  DEP_FILE = source\vendor\spdlog\CMakeFiles\spdlog.dir\src\spdlog.cpp.obj.d
+build source/vendor/spdlog/CMakeFiles/spdlog.dir/src/spdlog.cpp.o: CXX_COMPILER__spdlog_unscanned_Release /home/chry/workspace/git/openuet/source/vendor/spdlog/src/spdlog.cpp || cmake_object_order_depends_target_spdlog
+  DEFINES = -DGLFW_INCLUDE_NONE -DJUICE_PLATFORM_LINUX -DSPDLOG_COMPILED_LIB -DSQ_RELEASE -Dopenuet_PLATFORM_LINUX
+  DEP_FILE = source/vendor/spdlog/CMakeFiles/spdlog.dir/src/spdlog.cpp.o.d
   FLAGS = -O3 -std=c++17 -O3 -std=c++17 -O3 -DNDEBUG -std=c++17
-  INCLUDES = -IC:/Users/kashi/workspace/openuet/source/openuet -IC:/Users/kashi/workspace/openuet/source/vendor -IC:/Users/kashi/workspace/openuet/source/vendor/glad -IC:/Users/kashi/workspace/openuet/source/vendor/glm -IC:/Users/kashi/workspace/openuet/source/vendor/spdlog/include -IC:/Users/kashi/workspace/openuet/source/vendor/stb
-  OBJECT_DIR = source\vendor\spdlog\CMakeFiles\spdlog.dir
-  OBJECT_FILE_DIR = source\vendor\spdlog\CMakeFiles\spdlog.dir\src
+  INCLUDES = -I/home/chry/workspace/git/openuet/source/openuet -I/home/chry/workspace/git/openuet/source/vendor -I/home/chry/workspace/git/openuet/source/vendor/glad -I/home/chry/workspace/git/openuet/source/vendor/glm -I/home/chry/workspace/git/openuet/source/vendor/spdlog/include -I/home/chry/workspace/git/openuet/source/vendor/stb
+  OBJECT_DIR = source/vendor/spdlog/CMakeFiles/spdlog.dir
+  OBJECT_FILE_DIR = source/vendor/spdlog/CMakeFiles/spdlog.dir/src
 
-build source/vendor/spdlog/CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.obj: CXX_COMPILER__spdlog_unscanned_Release C$:/Users/kashi/workspace/openuet/source/vendor/spdlog/src/stdout_sinks.cpp || cmake_object_order_depends_target_spdlog
-  DEFINES = -DGLFW_INCLUDE_NONE -DJUICE_PLATFORM_WINDOW -DSPDLOG_COMPILED_LIB -DSQ_RELEASE -Dopenuet_PLATFORM_WINDOW
-  DEP_FILE = source\vendor\spdlog\CMakeFiles\spdlog.dir\src\stdout_sinks.cpp.obj.d
+build source/vendor/spdlog/CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o: CXX_COMPILER__spdlog_unscanned_Release /home/chry/workspace/git/openuet/source/vendor/spdlog/src/stdout_sinks.cpp || cmake_object_order_depends_target_spdlog
+  DEFINES = -DGLFW_INCLUDE_NONE -DJUICE_PLATFORM_LINUX -DSPDLOG_COMPILED_LIB -DSQ_RELEASE -Dopenuet_PLATFORM_LINUX
+  DEP_FILE = source/vendor/spdlog/CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o.d
   FLAGS = -O3 -std=c++17 -O3 -std=c++17 -O3 -DNDEBUG -std=c++17
-  INCLUDES = -IC:/Users/kashi/workspace/openuet/source/openuet -IC:/Users/kashi/workspace/openuet/source/vendor -IC:/Users/kashi/workspace/openuet/source/vendor/glad -IC:/Users/kashi/workspace/openuet/source/vendor/glm -IC:/Users/kashi/workspace/openuet/source/vendor/spdlog/include -IC:/Users/kashi/workspace/openuet/source/vendor/stb
-  OBJECT_DIR = source\vendor\spdlog\CMakeFiles\spdlog.dir
-  OBJECT_FILE_DIR = source\vendor\spdlog\CMakeFiles\spdlog.dir\src
+  INCLUDES = -I/home/chry/workspace/git/openuet/source/openuet -I/home/chry/workspace/git/openuet/source/vendor -I/home/chry/workspace/git/openuet/source/vendor/glad -I/home/chry/workspace/git/openuet/source/vendor/glm -I/home/chry/workspace/git/openuet/source/vendor/spdlog/include -I/home/chry/workspace/git/openuet/source/vendor/stb
+  OBJECT_DIR = source/vendor/spdlog/CMakeFiles/spdlog.dir
+  OBJECT_FILE_DIR = source/vendor/spdlog/CMakeFiles/spdlog.dir/src
 
-build source/vendor/spdlog/CMakeFiles/spdlog.dir/src/color_sinks.cpp.obj: CXX_COMPILER__spdlog_unscanned_Release C$:/Users/kashi/workspace/openuet/source/vendor/spdlog/src/color_sinks.cpp || cmake_object_order_depends_target_spdlog
-  DEFINES = -DGLFW_INCLUDE_NONE -DJUICE_PLATFORM_WINDOW -DSPDLOG_COMPILED_LIB -DSQ_RELEASE -Dopenuet_PLATFORM_WINDOW
-  DEP_FILE = source\vendor\spdlog\CMakeFiles\spdlog.dir\src\color_sinks.cpp.obj.d
+build source/vendor/spdlog/CMakeFiles/spdlog.dir/src/color_sinks.cpp.o: CXX_COMPILER__spdlog_unscanned_Release /home/chry/workspace/git/openuet/source/vendor/spdlog/src/color_sinks.cpp || cmake_object_order_depends_target_spdlog
+  DEFINES = -DGLFW_INCLUDE_NONE -DJUICE_PLATFORM_LINUX -DSPDLOG_COMPILED_LIB -DSQ_RELEASE -Dopenuet_PLATFORM_LINUX
+  DEP_FILE = source/vendor/spdlog/CMakeFiles/spdlog.dir/src/color_sinks.cpp.o.d
   FLAGS = -O3 -std=c++17 -O3 -std=c++17 -O3 -DNDEBUG -std=c++17
-  INCLUDES = -IC:/Users/kashi/workspace/openuet/source/openuet -IC:/Users/kashi/workspace/openuet/source/vendor -IC:/Users/kashi/workspace/openuet/source/vendor/glad -IC:/Users/kashi/workspace/openuet/source/vendor/glm -IC:/Users/kashi/workspace/openuet/source/vendor/spdlog/include -IC:/Users/kashi/workspace/openuet/source/vendor/stb
-  OBJECT_DIR = source\vendor\spdlog\CMakeFiles\spdlog.dir
-  OBJECT_FILE_DIR = source\vendor\spdlog\CMakeFiles\spdlog.dir\src
+  INCLUDES = -I/home/chry/workspace/git/openuet/source/openuet -I/home/chry/workspace/git/openuet/source/vendor -I/home/chry/workspace/git/openuet/source/vendor/glad -I/home/chry/workspace/git/openuet/source/vendor/glm -I/home/chry/workspace/git/openuet/source/vendor/spdlog/include -I/home/chry/workspace/git/openuet/source/vendor/stb
+  OBJECT_DIR = source/vendor/spdlog/CMakeFiles/spdlog.dir
+  OBJECT_FILE_DIR = source/vendor/spdlog/CMakeFiles/spdlog.dir/src
 
-build source/vendor/spdlog/CMakeFiles/spdlog.dir/src/file_sinks.cpp.obj: CXX_COMPILER__spdlog_unscanned_Release C$:/Users/kashi/workspace/openuet/source/vendor/spdlog/src/file_sinks.cpp || cmake_object_order_depends_target_spdlog
-  DEFINES = -DGLFW_INCLUDE_NONE -DJUICE_PLATFORM_WINDOW -DSPDLOG_COMPILED_LIB -DSQ_RELEASE -Dopenuet_PLATFORM_WINDOW
-  DEP_FILE = source\vendor\spdlog\CMakeFiles\spdlog.dir\src\file_sinks.cpp.obj.d
+build source/vendor/spdlog/CMakeFiles/spdlog.dir/src/file_sinks.cpp.o: CXX_COMPILER__spdlog_unscanned_Release /home/chry/workspace/git/openuet/source/vendor/spdlog/src/file_sinks.cpp || cmake_object_order_depends_target_spdlog
+  DEFINES = -DGLFW_INCLUDE_NONE -DJUICE_PLATFORM_LINUX -DSPDLOG_COMPILED_LIB -DSQ_RELEASE -Dopenuet_PLATFORM_LINUX
+  DEP_FILE = source/vendor/spdlog/CMakeFiles/spdlog.dir/src/file_sinks.cpp.o.d
   FLAGS = -O3 -std=c++17 -O3 -std=c++17 -O3 -DNDEBUG -std=c++17
-  INCLUDES = -IC:/Users/kashi/workspace/openuet/source/openuet -IC:/Users/kashi/workspace/openuet/source/vendor -IC:/Users/kashi/workspace/openuet/source/vendor/glad -IC:/Users/kashi/workspace/openuet/source/vendor/glm -IC:/Users/kashi/workspace/openuet/source/vendor/spdlog/include -IC:/Users/kashi/workspace/openuet/source/vendor/stb
-  OBJECT_DIR = source\vendor\spdlog\CMakeFiles\spdlog.dir
-  OBJECT_FILE_DIR = source\vendor\spdlog\CMakeFiles\spdlog.dir\src
+  INCLUDES = -I/home/chry/workspace/git/openuet/source/openuet -I/home/chry/workspace/git/openuet/source/vendor -I/home/chry/workspace/git/openuet/source/vendor/glad -I/home/chry/workspace/git/openuet/source/vendor/glm -I/home/chry/workspace/git/openuet/source/vendor/spdlog/include -I/home/chry/workspace/git/openuet/source/vendor/stb
+  OBJECT_DIR = source/vendor/spdlog/CMakeFiles/spdlog.dir
+  OBJECT_FILE_DIR = source/vendor/spdlog/CMakeFiles/spdlog.dir/src
 
-build source/vendor/spdlog/CMakeFiles/spdlog.dir/src/async.cpp.obj: CXX_COMPILER__spdlog_unscanned_Release C$:/Users/kashi/workspace/openuet/source/vendor/spdlog/src/async.cpp || cmake_object_order_depends_target_spdlog
-  DEFINES = -DGLFW_INCLUDE_NONE -DJUICE_PLATFORM_WINDOW -DSPDLOG_COMPILED_LIB -DSQ_RELEASE -Dopenuet_PLATFORM_WINDOW
-  DEP_FILE = source\vendor\spdlog\CMakeFiles\spdlog.dir\src\async.cpp.obj.d
+build source/vendor/spdlog/CMakeFiles/spdlog.dir/src/async.cpp.o: CXX_COMPILER__spdlog_unscanned_Release /home/chry/workspace/git/openuet/source/vendor/spdlog/src/async.cpp || cmake_object_order_depends_target_spdlog
+  DEFINES = -DGLFW_INCLUDE_NONE -DJUICE_PLATFORM_LINUX -DSPDLOG_COMPILED_LIB -DSQ_RELEASE -Dopenuet_PLATFORM_LINUX
+  DEP_FILE = source/vendor/spdlog/CMakeFiles/spdlog.dir/src/async.cpp.o.d
   FLAGS = -O3 -std=c++17 -O3 -std=c++17 -O3 -DNDEBUG -std=c++17
-  INCLUDES = -IC:/Users/kashi/workspace/openuet/source/openuet -IC:/Users/kashi/workspace/openuet/source/vendor -IC:/Users/kashi/workspace/openuet/source/vendor/glad -IC:/Users/kashi/workspace/openuet/source/vendor/glm -IC:/Users/kashi/workspace/openuet/source/vendor/spdlog/include -IC:/Users/kashi/workspace/openuet/source/vendor/stb
-  OBJECT_DIR = source\vendor\spdlog\CMakeFiles\spdlog.dir
-  OBJECT_FILE_DIR = source\vendor\spdlog\CMakeFiles\spdlog.dir\src
+  INCLUDES = -I/home/chry/workspace/git/openuet/source/openuet -I/home/chry/workspace/git/openuet/source/vendor -I/home/chry/workspace/git/openuet/source/vendor/glad -I/home/chry/workspace/git/openuet/source/vendor/glm -I/home/chry/workspace/git/openuet/source/vendor/spdlog/include -I/home/chry/workspace/git/openuet/source/vendor/stb
+  OBJECT_DIR = source/vendor/spdlog/CMakeFiles/spdlog.dir
+  OBJECT_FILE_DIR = source/vendor/spdlog/CMakeFiles/spdlog.dir/src
 
-build source/vendor/spdlog/CMakeFiles/spdlog.dir/src/cfg.cpp.obj: CXX_COMPILER__spdlog_unscanned_Release C$:/Users/kashi/workspace/openuet/source/vendor/spdlog/src/cfg.cpp || cmake_object_order_depends_target_spdlog
-  DEFINES = -DGLFW_INCLUDE_NONE -DJUICE_PLATFORM_WINDOW -DSPDLOG_COMPILED_LIB -DSQ_RELEASE -Dopenuet_PLATFORM_WINDOW
-  DEP_FILE = source\vendor\spdlog\CMakeFiles\spdlog.dir\src\cfg.cpp.obj.d
+build source/vendor/spdlog/CMakeFiles/spdlog.dir/src/cfg.cpp.o: CXX_COMPILER__spdlog_unscanned_Release /home/chry/workspace/git/openuet/source/vendor/spdlog/src/cfg.cpp || cmake_object_order_depends_target_spdlog
+  DEFINES = -DGLFW_INCLUDE_NONE -DJUICE_PLATFORM_LINUX -DSPDLOG_COMPILED_LIB -DSQ_RELEASE -Dopenuet_PLATFORM_LINUX
+  DEP_FILE = source/vendor/spdlog/CMakeFiles/spdlog.dir/src/cfg.cpp.o.d
   FLAGS = -O3 -std=c++17 -O3 -std=c++17 -O3 -DNDEBUG -std=c++17
-  INCLUDES = -IC:/Users/kashi/workspace/openuet/source/openuet -IC:/Users/kashi/workspace/openuet/source/vendor -IC:/Users/kashi/workspace/openuet/source/vendor/glad -IC:/Users/kashi/workspace/openuet/source/vendor/glm -IC:/Users/kashi/workspace/openuet/source/vendor/spdlog/include -IC:/Users/kashi/workspace/openuet/source/vendor/stb
-  OBJECT_DIR = source\vendor\spdlog\CMakeFiles\spdlog.dir
-  OBJECT_FILE_DIR = source\vendor\spdlog\CMakeFiles\spdlog.dir\src
+  INCLUDES = -I/home/chry/workspace/git/openuet/source/openuet -I/home/chry/workspace/git/openuet/source/vendor -I/home/chry/workspace/git/openuet/source/vendor/glad -I/home/chry/workspace/git/openuet/source/vendor/glm -I/home/chry/workspace/git/openuet/source/vendor/spdlog/include -I/home/chry/workspace/git/openuet/source/vendor/stb
+  OBJECT_DIR = source/vendor/spdlog/CMakeFiles/spdlog.dir
+  OBJECT_FILE_DIR = source/vendor/spdlog/CMakeFiles/spdlog.dir/src
 
-build source/vendor/spdlog/CMakeFiles/spdlog.dir/src/fmt.cpp.obj: CXX_COMPILER__spdlog_unscanned_Release C$:/Users/kashi/workspace/openuet/source/vendor/spdlog/src/fmt.cpp || cmake_object_order_depends_target_spdlog
-  DEFINES = -DGLFW_INCLUDE_NONE -DJUICE_PLATFORM_WINDOW -DSPDLOG_COMPILED_LIB -DSQ_RELEASE -Dopenuet_PLATFORM_WINDOW
-  DEP_FILE = source\vendor\spdlog\CMakeFiles\spdlog.dir\src\fmt.cpp.obj.d
+build source/vendor/spdlog/CMakeFiles/spdlog.dir/src/fmt.cpp.o: CXX_COMPILER__spdlog_unscanned_Release /home/chry/workspace/git/openuet/source/vendor/spdlog/src/fmt.cpp || cmake_object_order_depends_target_spdlog
+  DEFINES = -DGLFW_INCLUDE_NONE -DJUICE_PLATFORM_LINUX -DSPDLOG_COMPILED_LIB -DSQ_RELEASE -Dopenuet_PLATFORM_LINUX
+  DEP_FILE = source/vendor/spdlog/CMakeFiles/spdlog.dir/src/fmt.cpp.o.d
   FLAGS = -O3 -std=c++17 -O3 -std=c++17 -O3 -DNDEBUG -std=c++17
-  INCLUDES = -IC:/Users/kashi/workspace/openuet/source/openuet -IC:/Users/kashi/workspace/openuet/source/vendor -IC:/Users/kashi/workspace/openuet/source/vendor/glad -IC:/Users/kashi/workspace/openuet/source/vendor/glm -IC:/Users/kashi/workspace/openuet/source/vendor/spdlog/include -IC:/Users/kashi/workspace/openuet/source/vendor/stb
-  OBJECT_DIR = source\vendor\spdlog\CMakeFiles\spdlog.dir
-  OBJECT_FILE_DIR = source\vendor\spdlog\CMakeFiles\spdlog.dir\src
+  INCLUDES = -I/home/chry/workspace/git/openuet/source/openuet -I/home/chry/workspace/git/openuet/source/vendor -I/home/chry/workspace/git/openuet/source/vendor/glad -I/home/chry/workspace/git/openuet/source/vendor/glm -I/home/chry/workspace/git/openuet/source/vendor/spdlog/include -I/home/chry/workspace/git/openuet/source/vendor/stb
+  OBJECT_DIR = source/vendor/spdlog/CMakeFiles/spdlog.dir
+  OBJECT_FILE_DIR = source/vendor/spdlog/CMakeFiles/spdlog.dir/src
 
 
 # =============================================================================
@@ -272,14 +288,14 @@ build source/vendor/spdlog/CMakeFiles/spdlog.dir/src/fmt.cpp.obj: CXX_COMPILER__
 
 
 #############################################
-# Link the static library source\vendor\spdlog\libspdlog.a
+# Link the static library source/vendor/spdlog/libspdlog.a
 
-build source/vendor/spdlog/libspdlog.a: CXX_STATIC_LIBRARY_LINKER__spdlog_Release source/vendor/spdlog/CMakeFiles/spdlog.dir/src/spdlog.cpp.obj source/vendor/spdlog/CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.obj source/vendor/spdlog/CMakeFiles/spdlog.dir/src/color_sinks.cpp.obj source/vendor/spdlog/CMakeFiles/spdlog.dir/src/file_sinks.cpp.obj source/vendor/spdlog/CMakeFiles/spdlog.dir/src/async.cpp.obj source/vendor/spdlog/CMakeFiles/spdlog.dir/src/cfg.cpp.obj source/vendor/spdlog/CMakeFiles/spdlog.dir/src/fmt.cpp.obj
+build source/vendor/spdlog/libspdlog.a: CXX_STATIC_LIBRARY_LINKER__spdlog_Release source/vendor/spdlog/CMakeFiles/spdlog.dir/src/spdlog.cpp.o source/vendor/spdlog/CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o source/vendor/spdlog/CMakeFiles/spdlog.dir/src/color_sinks.cpp.o source/vendor/spdlog/CMakeFiles/spdlog.dir/src/file_sinks.cpp.o source/vendor/spdlog/CMakeFiles/spdlog.dir/src/async.cpp.o source/vendor/spdlog/CMakeFiles/spdlog.dir/src/cfg.cpp.o source/vendor/spdlog/CMakeFiles/spdlog.dir/src/fmt.cpp.o
   LANGUAGE_COMPILE_FLAGS = -O3 -std=c++17 -O3 -std=c++17 -O3 -DNDEBUG
-  OBJECT_DIR = source\vendor\spdlog\CMakeFiles\spdlog.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = source\vendor\spdlog\libspdlog.a
+  OBJECT_DIR = source/vendor/spdlog/CMakeFiles/spdlog.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = source/vendor/spdlog/libspdlog.a
   TARGET_PDB = spdlog.a.dbg
 
 
@@ -287,7 +303,7 @@ build source/vendor/spdlog/libspdlog.a: CXX_STATIC_LIBRARY_LINKER__spdlog_Releas
 # Utility command for edit_cache
 
 build source/vendor/spdlog/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\kashi\workspace\openuet\build\juice\source\vendor\spdlog && "C:\Program Files\CMake\bin\cmake-gui.exe" -SC:\Users\kashi\workspace\openuet -BC:\Users\kashi\workspace\openuet\build\juice"
+  COMMAND = cd /home/chry/workspace/git/openuet/build/juice/source/vendor/spdlog && /usr/bin/ccmake -S/home/chry/workspace/git/openuet -B/home/chry/workspace/git/openuet/build/juice
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -299,7 +315,7 @@ build source/vendor/spdlog/edit_cache: phony source/vendor/spdlog/CMakeFiles/edi
 # Utility command for rebuild_cache
 
 build source/vendor/spdlog/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\kashi\workspace\openuet\build\juice\source\vendor\spdlog && "C:\Program Files\CMake\bin\cmake.exe" --regenerate-during-build -SC:\Users\kashi\workspace\openuet -BC:\Users\kashi\workspace\openuet\build\juice"
+  COMMAND = cd /home/chry/workspace/git/openuet/build/juice/source/vendor/spdlog && /usr/bin/cmake --regenerate-during-build -S/home/chry/workspace/git/openuet -B/home/chry/workspace/git/openuet/build/juice
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -308,7 +324,7 @@ build source/vendor/spdlog/rebuild_cache: phony source/vendor/spdlog/CMakeFiles/
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# C:/Users/kashi/workspace/openuet/source/CMakeLists.txt
+# /home/chry/workspace/git/openuet/source/CMakeLists.txt
 # =============================================================================
 
 # =============================================================================
@@ -320,13 +336,13 @@ build source/vendor/spdlog/rebuild_cache: phony source/vendor/spdlog/CMakeFiles/
 
 build cmake_object_order_depends_target_stb: phony || source/vendor/stb/CMakeFiles/stb.dir
 
-build source/vendor/stb/CMakeFiles/stb.dir/stb_image.cpp.obj: CXX_COMPILER__stb_unscanned_Release C$:/Users/kashi/workspace/openuet/source/vendor/stb/stb_image.cpp || cmake_object_order_depends_target_stb
-  DEFINES = -DGLFW_INCLUDE_NONE -DJUICE_PLATFORM_WINDOW -DSPDLOG_COMPILED_LIB -DSQ_RELEASE -Dopenuet_PLATFORM_WINDOW
-  DEP_FILE = source\vendor\stb\CMakeFiles\stb.dir\stb_image.cpp.obj.d
+build source/vendor/stb/CMakeFiles/stb.dir/stb_image.cpp.o: CXX_COMPILER__stb_unscanned_Release /home/chry/workspace/git/openuet/source/vendor/stb/stb_image.cpp || cmake_object_order_depends_target_stb
+  DEFINES = -DGLFW_INCLUDE_NONE -DJUICE_PLATFORM_LINUX -DSPDLOG_COMPILED_LIB -DSQ_RELEASE -Dopenuet_PLATFORM_LINUX
+  DEP_FILE = source/vendor/stb/CMakeFiles/stb.dir/stb_image.cpp.o.d
   FLAGS = -O3 -std=c++17 -O3 -std=c++17 -O3 -DNDEBUG -std=gnu++17
-  INCLUDES = -IC:/Users/kashi/workspace/openuet/source/openuet -IC:/Users/kashi/workspace/openuet/source/vendor -IC:/Users/kashi/workspace/openuet/source/vendor/glad -IC:/Users/kashi/workspace/openuet/source/vendor/glm -IC:/Users/kashi/workspace/openuet/source/vendor/spdlog/include -IC:/Users/kashi/workspace/openuet/source/vendor/stb -IC:/Users/kashi/workspace/openuet/source/vendor/stb/.
-  OBJECT_DIR = source\vendor\stb\CMakeFiles\stb.dir
-  OBJECT_FILE_DIR = source\vendor\stb\CMakeFiles\stb.dir
+  INCLUDES = -I/home/chry/workspace/git/openuet/source/openuet -I/home/chry/workspace/git/openuet/source/vendor -I/home/chry/workspace/git/openuet/source/vendor/glad -I/home/chry/workspace/git/openuet/source/vendor/glm -I/home/chry/workspace/git/openuet/source/vendor/spdlog/include -I/home/chry/workspace/git/openuet/source/vendor/stb -I/home/chry/workspace/git/openuet/source/vendor/stb/.
+  OBJECT_DIR = source/vendor/stb/CMakeFiles/stb.dir
+  OBJECT_FILE_DIR = source/vendor/stb/CMakeFiles/stb.dir
 
 
 # =============================================================================
@@ -334,14 +350,14 @@ build source/vendor/stb/CMakeFiles/stb.dir/stb_image.cpp.obj: CXX_COMPILER__stb_
 
 
 #############################################
-# Link the static library source\vendor\stb\libstb.a
+# Link the static library source/vendor/stb/libstb.a
 
-build source/vendor/stb/libstb.a: CXX_STATIC_LIBRARY_LINKER__stb_Release source/vendor/stb/CMakeFiles/stb.dir/stb_image.cpp.obj
+build source/vendor/stb/libstb.a: CXX_STATIC_LIBRARY_LINKER__stb_Release source/vendor/stb/CMakeFiles/stb.dir/stb_image.cpp.o
   LANGUAGE_COMPILE_FLAGS = -O3 -std=c++17 -O3 -std=c++17 -O3 -DNDEBUG
-  OBJECT_DIR = source\vendor\stb\CMakeFiles\stb.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = source\vendor\stb\libstb.a
+  OBJECT_DIR = source/vendor/stb/CMakeFiles/stb.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = source/vendor/stb/libstb.a
   TARGET_PDB = stb.a.dbg
 
 
@@ -349,7 +365,7 @@ build source/vendor/stb/libstb.a: CXX_STATIC_LIBRARY_LINKER__stb_Release source/
 # Utility command for edit_cache
 
 build source/vendor/stb/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\kashi\workspace\openuet\build\juice\source\vendor\stb && "C:\Program Files\CMake\bin\cmake-gui.exe" -SC:\Users\kashi\workspace\openuet -BC:\Users\kashi\workspace\openuet\build\juice"
+  COMMAND = cd /home/chry/workspace/git/openuet/build/juice/source/vendor/stb && /usr/bin/ccmake -S/home/chry/workspace/git/openuet -B/home/chry/workspace/git/openuet/build/juice
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -361,7 +377,7 @@ build source/vendor/stb/edit_cache: phony source/vendor/stb/CMakeFiles/edit_cach
 # Utility command for rebuild_cache
 
 build source/vendor/stb/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\kashi\workspace\openuet\build\juice\source\vendor\stb && "C:\Program Files\CMake\bin\cmake.exe" --regenerate-during-build -SC:\Users\kashi\workspace\openuet -BC:\Users\kashi\workspace\openuet\build\juice"
+  COMMAND = cd /home/chry/workspace/git/openuet/build/juice/source/vendor/stb && /usr/bin/cmake --regenerate-during-build -S/home/chry/workspace/git/openuet -B/home/chry/workspace/git/openuet/build/juice
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -370,7 +386,7 @@ build source/vendor/stb/rebuild_cache: phony source/vendor/stb/CMakeFiles/rebuil
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# C:/Users/kashi/workspace/openuet/CMakeLists.txt
+# /home/chry/workspace/git/openuet/CMakeLists.txt
 # =============================================================================
 
 # =============================================================================
@@ -382,13 +398,13 @@ build source/vendor/stb/rebuild_cache: phony source/vendor/stb/CMakeFiles/rebuil
 
 build cmake_object_order_depends_target_sandbox: phony || cmake_object_order_depends_target_glad cmake_object_order_depends_target_openuet cmake_object_order_depends_target_spdlog cmake_object_order_depends_target_stb
 
-build sandbox/CMakeFiles/sandbox.dir/src/main.cpp.obj: CXX_COMPILER__sandbox_unscanned_Release C$:/Users/kashi/workspace/openuet/sandbox/src/main.cpp || cmake_object_order_depends_target_sandbox
-  DEFINES = -DGLFW_INCLUDE_NONE -DJUICE_PLATFORM_WINDOW -DSPDLOG_COMPILED_LIB -DSQ_RELEASE
-  DEP_FILE = sandbox\CMakeFiles\sandbox.dir\src\main.cpp.obj.d
+build sandbox/CMakeFiles/sandbox.dir/src/main.cpp.o: CXX_COMPILER__sandbox_unscanned_Release /home/chry/workspace/git/openuet/sandbox/src/main.cpp || cmake_object_order_depends_target_sandbox
+  DEFINES = -DGLFW_INCLUDE_NONE -DJUICE_PLATFORM_LINUX -DSPDLOG_COMPILED_LIB -DSQ_RELEASE
+  DEP_FILE = sandbox/CMakeFiles/sandbox.dir/src/main.cpp.o.d
   FLAGS = -O3 -std=c++17 -O3 -std=c++17 -O3 -DNDEBUG -std=gnu++17
-  INCLUDES = -IC:/Users/kashi/workspace/openuet/source/openuet -IC:/Users/kashi/workspace/openuet/source/vendor -IC:/Users/kashi/workspace/openuet/sandbox -IC:/Users/kashi/workspace/openuet/source/vendor/spdlog/include
-  OBJECT_DIR = sandbox\CMakeFiles\sandbox.dir
-  OBJECT_FILE_DIR = sandbox\CMakeFiles\sandbox.dir\src
+  INCLUDES = -I/home/chry/workspace/git/openuet/source/openuet -I/home/chry/workspace/git/openuet/source/vendor -I/home/chry/workspace/git/openuet/sandbox -I/home/chry/workspace/git/openuet/source/vendor/spdlog/include
+  OBJECT_DIR = sandbox/CMakeFiles/sandbox.dir
+  OBJECT_FILE_DIR = sandbox/CMakeFiles/sandbox.dir/src
 
 
 # =============================================================================
@@ -396,24 +412,23 @@ build sandbox/CMakeFiles/sandbox.dir/src/main.cpp.obj: CXX_COMPILER__sandbox_uns
 
 
 #############################################
-# Link the executable sandbox\sandbox.exe
+# Link the executable sandbox/sandbox
 
-build sandbox/sandbox.exe: CXX_EXECUTABLE_LINKER__sandbox_Release sandbox/CMakeFiles/sandbox.dir/src/main.cpp.obj | source/libopenuet.a source/vendor/glad/libglad.a source/vendor/stb/libstb.a source/vendor/spdlog/libspdlog.a C$:/Users/kashi/workspace/openuet/source/dependencies/glfw3.dll || source/libopenuet.a source/vendor/glad/libglad.a source/vendor/spdlog/libspdlog.a source/vendor/stb/libstb.a
+build sandbox/sandbox: CXX_EXECUTABLE_LINKER__sandbox_Release sandbox/CMakeFiles/sandbox.dir/src/main.cpp.o | source/libopenuet.a source/vendor/glad/libglad.a source/vendor/stb/libstb.a source/vendor/spdlog/libspdlog.a /usr/lib/libglfw.so || source/libopenuet.a source/vendor/glad/libglad.a source/vendor/spdlog/libspdlog.a source/vendor/stb/libstb.a
   FLAGS = -O3 -std=c++17 -O3 -std=c++17 -O3 -DNDEBUG
-  LINK_LIBRARIES = source/libopenuet.a  source/vendor/glad/libglad.a  source/vendor/stb/libstb.a  source/vendor/spdlog/libspdlog.a  C:/Users/kashi/workspace/openuet/source/dependencies/glfw3.dll  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = sandbox\CMakeFiles\sandbox.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = sandbox\sandbox.exe
-  TARGET_IMPLIB = sandbox\libsandbox.dll.a
-  TARGET_PDB = sandbox.exe.dbg
+  LINK_LIBRARIES = source/libopenuet.a  source/vendor/glad/libglad.a  source/vendor/stb/libstb.a  source/vendor/spdlog/libspdlog.a  /usr/lib/libglfw.so
+  OBJECT_DIR = sandbox/CMakeFiles/sandbox.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = sandbox/sandbox
+  TARGET_PDB = sandbox.dbg
 
 
 #############################################
 # Utility command for edit_cache
 
 build sandbox/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\kashi\workspace\openuet\build\juice\sandbox && "C:\Program Files\CMake\bin\cmake-gui.exe" -SC:\Users\kashi\workspace\openuet -BC:\Users\kashi\workspace\openuet\build\juice"
+  COMMAND = cd /home/chry/workspace/git/openuet/build/juice/sandbox && /usr/bin/ccmake -S/home/chry/workspace/git/openuet -B/home/chry/workspace/git/openuet/build/juice
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -425,7 +440,7 @@ build sandbox/edit_cache: phony sandbox/CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build sandbox/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\kashi\workspace\openuet\build\juice\sandbox && "C:\Program Files\CMake\bin\cmake.exe" --regenerate-during-build -SC:\Users\kashi\workspace\openuet -BC:\Users\kashi\workspace\openuet\build\juice"
+  COMMAND = cd /home/chry/workspace/git/openuet/build/juice/sandbox && /usr/bin/cmake --regenerate-during-build -S/home/chry/workspace/git/openuet -B/home/chry/workspace/git/openuet/build/juice
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -447,9 +462,7 @@ build libstb.a: phony source/vendor/stb/libstb.a
 
 build openuet: phony source/libopenuet.a
 
-build sandbox: phony sandbox/sandbox.exe
-
-build sandbox.exe: phony sandbox/sandbox.exe
+build sandbox: phony sandbox/sandbox
 
 build spdlog: phony source/vendor/spdlog/libspdlog.a
 
@@ -461,42 +474,42 @@ build stb: phony source/vendor/stb/libstb.a
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/kashi/workspace/openuet/build/juice
+# Folder: /home/chry/workspace/git/openuet/build/juice
 
 build all: phony source/all sandbox/all
 
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/kashi/workspace/openuet/build/juice/sandbox
+# Folder: /home/chry/workspace/git/openuet/build/juice/sandbox
 
-build sandbox/all: phony sandbox/sandbox.exe
+build sandbox/all: phony sandbox/sandbox
 
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/kashi/workspace/openuet/build/juice/source
+# Folder: /home/chry/workspace/git/openuet/build/juice/source
 
 build source/all: phony source/libopenuet.a source/vendor/glad/all source/vendor/spdlog/all source/vendor/stb/all
 
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/kashi/workspace/openuet/build/juice/source/vendor/glad
+# Folder: /home/chry/workspace/git/openuet/build/juice/source/vendor/glad
 
 build source/vendor/glad/all: phony source/vendor/glad/libglad.a
 
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/kashi/workspace/openuet/build/juice/source/vendor/spdlog
+# Folder: /home/chry/workspace/git/openuet/build/juice/source/vendor/spdlog
 
 build source/vendor/spdlog/all: phony source/vendor/spdlog/libspdlog.a
 
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/kashi/workspace/openuet/build/juice/source/vendor/stb
+# Folder: /home/chry/workspace/git/openuet/build/juice/source/vendor/stb
 
 build source/vendor/stb/all: phony source/vendor/stb/libstb.a
 
@@ -507,14 +520,14 @@ build source/vendor/stb/all: phony source/vendor/stb/libstb.a
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:/Program$ Files/CMake/share/cmake-3.27/Modules/CMakeCInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/CMakeRCInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/CheckCSourceCompiles.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/CheckIncludeFile.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/CheckLibraryExists.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/Compiler/GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/FindPackageHandleStandardArgs.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/FindPackageMessage.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/FindThreads.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/GNUInstallDirs.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/Platform/Windows.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/Platform/WindowsPaths.cmake C$:/Users/kashi/workspace/openuet/CMakeLists.txt C$:/Users/kashi/workspace/openuet/sandbox/CMakeLists.txt C$:/Users/kashi/workspace/openuet/source/CMakeLists.txt C$:/Users/kashi/workspace/openuet/source/vendor/glad/CMakeLists.txt C$:/Users/kashi/workspace/openuet/source/vendor/spdlog/CMakeLists.txt C$:/Users/kashi/workspace/openuet/source/vendor/spdlog/cmake/ide.cmake C$:/Users/kashi/workspace/openuet/source/vendor/spdlog/cmake/utils.cmake C$:/Users/kashi/workspace/openuet/source/vendor/stb/CMakeLists.txt CMakeCache.txt CMakeFiles/3.27.3/CMakeCCompiler.cmake CMakeFiles/3.27.3/CMakeCXXCompiler.cmake CMakeFiles/3.27.3/CMakeRCCompiler.cmake CMakeFiles/3.27.3/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | /home/chry/workspace/git/openuet/CMakeLists.txt /home/chry/workspace/git/openuet/sandbox/CMakeLists.txt /home/chry/workspace/git/openuet/source/CMakeLists.txt /home/chry/workspace/git/openuet/source/vendor/glad/CMakeLists.txt /home/chry/workspace/git/openuet/source/vendor/spdlog/CMakeLists.txt /home/chry/workspace/git/openuet/source/vendor/spdlog/cmake/ide.cmake /home/chry/workspace/git/openuet/source/vendor/spdlog/cmake/utils.cmake /home/chry/workspace/git/openuet/source/vendor/stb/CMakeLists.txt /usr/share/cmake/Modules/CMakeCInformation.cmake /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/CheckCSourceCompiles.cmake /usr/share/cmake/Modules/CheckIncludeFile.cmake /usr/share/cmake/Modules/CheckLibraryExists.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/GNU-C.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake/Modules/FindPackageMessage.cmake /usr/share/cmake/Modules/FindThreads.cmake /usr/share/cmake/Modules/GNUInstallDirs.cmake /usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-Initialize.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.27.4/CMakeCCompiler.cmake CMakeFiles/3.27.4/CMakeCXXCompiler.cmake CMakeFiles/3.27.4/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/Program$ Files/CMake/share/cmake-3.27/Modules/CMakeCInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/CMakeRCInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/CheckCSourceCompiles.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/CheckIncludeFile.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/CheckLibraryExists.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/Compiler/GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/FindPackageHandleStandardArgs.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/FindPackageMessage.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/FindThreads.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/GNUInstallDirs.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/Platform/Windows.cmake C$:/Program$ Files/CMake/share/cmake-3.27/Modules/Platform/WindowsPaths.cmake C$:/Users/kashi/workspace/openuet/CMakeLists.txt C$:/Users/kashi/workspace/openuet/sandbox/CMakeLists.txt C$:/Users/kashi/workspace/openuet/source/CMakeLists.txt C$:/Users/kashi/workspace/openuet/source/vendor/glad/CMakeLists.txt C$:/Users/kashi/workspace/openuet/source/vendor/spdlog/CMakeLists.txt C$:/Users/kashi/workspace/openuet/source/vendor/spdlog/cmake/ide.cmake C$:/Users/kashi/workspace/openuet/source/vendor/spdlog/cmake/utils.cmake C$:/Users/kashi/workspace/openuet/source/vendor/stb/CMakeLists.txt CMakeCache.txt CMakeFiles/3.27.3/CMakeCCompiler.cmake CMakeFiles/3.27.3/CMakeCXXCompiler.cmake CMakeFiles/3.27.3/CMakeRCCompiler.cmake CMakeFiles/3.27.3/CMakeSystem.cmake: phony
+build /home/chry/workspace/git/openuet/CMakeLists.txt /home/chry/workspace/git/openuet/sandbox/CMakeLists.txt /home/chry/workspace/git/openuet/source/CMakeLists.txt /home/chry/workspace/git/openuet/source/vendor/glad/CMakeLists.txt /home/chry/workspace/git/openuet/source/vendor/spdlog/CMakeLists.txt /home/chry/workspace/git/openuet/source/vendor/spdlog/cmake/ide.cmake /home/chry/workspace/git/openuet/source/vendor/spdlog/cmake/utils.cmake /home/chry/workspace/git/openuet/source/vendor/stb/CMakeLists.txt /usr/share/cmake/Modules/CMakeCInformation.cmake /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/CheckCSourceCompiles.cmake /usr/share/cmake/Modules/CheckIncludeFile.cmake /usr/share/cmake/Modules/CheckLibraryExists.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/GNU-C.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake/Modules/FindPackageMessage.cmake /usr/share/cmake/Modules/FindThreads.cmake /usr/share/cmake/Modules/GNUInstallDirs.cmake /usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-Initialize.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.27.4/CMakeCCompiler.cmake CMakeFiles/3.27.4/CMakeCXXCompiler.cmake CMakeFiles/3.27.4/CMakeSystem.cmake: phony
 
 
 #############################################
